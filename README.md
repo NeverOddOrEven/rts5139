@@ -1,6 +1,7 @@
 # Overview #
 
-This is a temporary fix for RTS5129/RTS5139 USB MMC card reader on Linux 3.16+ kernels. On my Lonovo Yoga 13 running Ubuntu 15.10 with a ```4.2.0-25-generic``` kernel I get the following errors.
+This is a temporary fix for RTS5129/RTS5139 USB MMC card reader on Linux 3.16+ kernels. On my 
+Lenovo Ideapad Yoga 13 Model 20175 running Mint Cinnamon with a ```4.13.0-37-generic``` kernel I get the following errors. 
 
 ```
 Jan 27 22:27:53 ideapad-yoga-13 kernel: [   48.108682] mmc0: tuning execution failed
@@ -21,14 +22,6 @@ git clone https://github.com/asymingt/rts5139.git
 cd rts5139
 make
 sudo make install
-```
-
-Blacklist the problematic modules by adding the following lines to ```/etc/modprobe.d/blacklist.conf```.
-
-```
-blacklist rtsx_usb_sdmmc
-blacklist rtsx_usb_ms
-blacklist rtsx_usb
 ```
 
 Then, make sure you disable module autoloading (and also in the initial RAM filesystem)

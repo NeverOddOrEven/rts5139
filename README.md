@@ -1,6 +1,6 @@
 # Overview #
 
-This is a temporary fix for RTS5129/RTS5139 USB MMC card reader on Linux 3.16+ kernels. On my 
+This is a temporary fix for RTS5129/RTS5139 USB MMC/SD CARD card reader on Linux 3.16+ kernels. On my 
 Lenovo Ideapad Yoga 13 Model 20175 running Mint Cinnamon with a ```4.13.0-37-generic``` kernel I get the following errors. 
 
 ```
